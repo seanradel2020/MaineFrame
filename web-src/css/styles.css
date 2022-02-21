@@ -1,0 +1,87 @@
+<style>
+/* (A) THE CONTAINER */
+#grid-layout {
+  display: grid;
+  grid-gap: 0px;
+  /* DESIGN YOUR GRID TEMPLATE */
+  grid-template-areas:
+  'logo logo logo name'
+  'header header header header'
+  'main main main side'
+  'footer footer footer footer';
+}
+
+/* (B) ASSIGN THE AREAS */
+.cell {
+  padding: 100px;
+}
+.logo{
+    grid-area: logo;
+ background: #B0D7FF;
+}
+.name{
+    grid-area: name;
+ background: #B0D7FF;
+}
+
+.head {
+  grid-area: header;
+  background:  #003263;
+}
+.main {
+  grid-area: main;
+  background: #FFFFFF;
+}
+.side {
+  grid-area: side;
+  background: #FFFFFF;
+}
+.foot {
+  grid-area: footer;
+  background: #003263;
+}
+
+
+footertext a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+footertext a:hover {
+  background-color:  #B0D7FF;);
+    color: black;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+text{
+  float: left;
+}
+
+text a{
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+text a:hover{
+  background-color:  #B0D7FF;);
+    color: black;
+}
+
+
+
+</style>
