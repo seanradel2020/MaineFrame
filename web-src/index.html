@@ -1,5 +1,6 @@
 
 <link rel="stylesheet" type="text/css" href="./css/styles.css">
+<script src="./js/index.js"></script>
 <style>
 #grid-layout {
   display: grid;
@@ -14,11 +15,15 @@
 </style>
 <div id="grid-layout">
     <div class="cell logo">
-        <text><a href="#">logo</a></text>
+      <a href="index.html">
+<img src="media/MaineFrame.png" width="500" height="100">
+</a>
         </div>
 
         <div class="cell name">
-            <text>UMAINE CONNECT</text>
+          <a href="index.html">
+    <img src="media/umaineconnect.png" width="400" height="200">
+    </a>
             </div>
 
     </ul>
@@ -33,7 +38,21 @@
   <text style="float:right"><a href="contact.php">Contact</a></text>
   </ul>
   </div>
-  <div class="cell main">Main</div>
+  <div class="cell main">
+
+    <div id="map"></div>
+
+       <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+       <script
+         src="https://maps.googleapis.com/maps/api/js?key=SECRETKEY&callback=initMap&libraries=&v=weekly"
+         async
+       ></script>
+
+
+
+
+  </div>
+
   <div class="cell side">Side</div>
   <div class="cell foot">
        <footertext><a class="active" href="terms.php">Terms and Conditions </a></footertex>  <footertext><a href="privacy.php">Privacy Policy</a></footertext>

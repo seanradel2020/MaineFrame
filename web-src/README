@@ -1,8 +1,16 @@
 All code related to UMaine Connect by MaineFrame will be held in this directory
 
 
-Sunday Feburary 20, 2022, 9:20PM - Version 0.1 
+Sunday Feburary 20, 2022, 9:20PM - Version 0.1
 Changes include
       - Landing page outline has been created
-      - basic css framework has been built 
+      - basic css framework has been built
       - developed our desktop UI design
+- Sean Radel
+Sunday Feburary 27, 2022, 1:34PM - Version 0.2
+Changes include
+      - Added Google Maps
+        - Google maps API KEY is *ONLY* in the LastPass Password Manager
+      - Added points on Google Maps
+      - Added Images
+        - Images were designed by Nicole Cortez
