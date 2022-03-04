@@ -1,4 +1,4 @@
-<style>
+
 /* (A) THE CONTAINER */
 #grid-layout {
   display: grid;
@@ -51,7 +51,7 @@ footertext a {
 }
 
 footertext a:hover {
-  background-color:  #B0D7FF;);
+  background-color:  #B0D7FF;;
     color: black;
   text-align: center;
 }
@@ -78,7 +78,7 @@ text a{
 }
 
 text a:hover{
-  background-color:  #B0D7FF;);
+  background-color:  #B0D7FF;;
     color: black;
 }
 
@@ -89,5 +89,3 @@ text a:hover{
   width: 100%;
   /* The width is the width of the web page */
 }
-
-</style>

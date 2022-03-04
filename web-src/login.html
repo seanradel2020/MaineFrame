@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>UMaine Connect Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/login_style.css" />
+</head>
+<body>
+  <div id="logo" class="main-div">    
+    <a href="index.html"><img src="media/umaineconnect.png" width="400" height="200"></a>
+  </div>
+  <div id="login_div" class="main-div">
+    <h3>UMaine Connect Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+    <button onclick="login()">Login To Account</button>
+    <button onclick="login_Google()">Login With Google</button>
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="signUp_Google()">Sign Up With Google</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <p id="user_para"></p>
+    <p>You are logged in to UMaine Connect</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAjWbI-t_c0TK6UaPhu1HJX-3ds7d7-AbQ",
+      authDomain: "umaine-connect.firebaseapp.com",
+      databaseURL: "umaine-connect",
+      projectId: "umaine-connect",
+      storageBucket: "umaine-connect.appspot.com",
+      messagingSenderId: "389765807009",
+      appId: "1:389765807009:web:ff0230588761594ce9a9e0",
+      measurementId: "G-VR1JG1CH5Y"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="./js/index.js"></script>
+
+</body>
+</html>

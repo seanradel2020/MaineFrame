@@ -1,24 +1,62 @@
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const fogler = { lat: 44.899490, lng:  -68.669258 };
-  //44.899490, -68.669258 fogler library
-  // The map, centered at Uluru
-  //cca = 44.899422, -68.666359
-  const cca = {lat: 44.899422, lng: -68.666359};
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
-    center: fogler,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: fogler,
-    map: map,
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+
+    document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
+
+    var user = firebase.auth().currentUser;
+
+    if(user != null){
+
+      var email_id = user.email;
+      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+
+    }
+
+  } else {
+    // No user is signed in.
+
+    document.getElementById("user_div").style.display = "none";
+    document.getElementById("login_div").style.display = "block";
+
+  }
+});
+
+function login(){
+
+  var userEmail = document.getElementById("email_field").value;
+  var userPass = document.getElementById("password_field").value;
+
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+
+    window.alert("Error : " + errorMessage);
+
+    // ...
   });
 
-
-  const marker2 = new google.maps.Marker({
-    position: cca,
-    map: map,
-  });
 }
+
+function signUp(){
+  const auth = getAuth();
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    });
+}  
+
+function logout(){
+  firebase.auth().signOut();
+}
+
+
