@@ -48,10 +48,34 @@
          src="https://maps.googleapis.com/maps/api/js?key=SECRETKEY&callback=initMap&libraries=&v=weekly"
          async
        ></script>
-  
+
   </div>
 
-  <div class="cell side">Side</div>
+  <div class="cell side">
+
+    <h1>Activities</h1>
+  <ul id="items">
+      <li>Fogler Library, 11AM, lat: 44.899490, lng:  -68.669258</li>
+      <li>CCA, 12PM, lat: 44.899422, lng: -68.666359</li>
+  </ul>
+
+    <input type="text" id="newItemText">
+    <input type="button" value="Add an Item" onclick="addItem()">
+
+    <script>
+        function addItem() {
+            let input = document.getElementById("newItemText");
+            if (input.value.length === 0) {
+                return;
+            }
+            let text = input.value;
+            let newLi = document.createElement("li");
+            newLi.textContent = text;
+            document.getElementById("items").appendChild(newLi);
+            input.value = "";
+          }
+</script>
+  </div>
   <div class="cell foot">
        <footertext><a class="active" href="terms.php">Terms and Conditions </a></footertex>  <footertext><a href="privacy.php">Privacy Policy</a></footertext>
 

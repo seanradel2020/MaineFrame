@@ -10,13 +10,13 @@ function initMap() {
       zoom: 15,
       center: fogler,
     });
-    // The marker, positioned at Uluru
+
     const marker = new google.maps.Marker({
       position: fogler,
       map: map,
     });
-  
-  
+
+
     const marker2 = new google.maps.Marker({
       position: cca,
       map: map,
