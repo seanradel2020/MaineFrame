@@ -12,7 +12,6 @@
 </head>
 
 <style>
-
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -27,6 +26,26 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+input, select{
+    height:30px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/* Column code from https://www.w3schools.com/howto/howto_css_two_columns.asp */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
 
@@ -60,6 +79,49 @@ tr:nth-child(even) {
 
     <div class = "cell main">
     <h2>Event List</h2>
+
+    <div style = "background-image: linear-gradient(to bottom, white , rgb(228, 228, 228)); border:1px solid dimgray; padding:20px">
+        <h2>Filter Events</h2>
+        <label style = "padding-bottom: 10px">
+           Event Name<br>
+           <input type="search" style = "width:100%">
+        </label>
+        <div class = "row">
+            <div class = "column">
+                <label for="tagSelect">Tag<br></label>
+                <select id="tagSelect" style = "width: 95%">
+                <option selected disabled hidden>Select to add</option>
+                <option>Study Session</option>
+                <option>Party</option>
+                <option>Soccer</option>
+                <option>Basketball</option>
+                <option>Club Meeting</option>
+                <option>Volunteering</option>
+                </select>
+            </div>
+            <div class = "column">
+                <label for="attendeeFilter">Number of Attendees<br></label>
+                <select id="attendeeFilter" style = "width: 50%">
+                <option>Any number of</option>
+                <option>Fewer than:</option>
+                <option>More than:</option>
+                </select>
+                <input type="search" style = "width:33%" placeholder="(optional)">
+                <pt>attendees</pt>
+            </div>
+        </div>
+    </div>
+
+    <div style = "background-image: linear-gradient(to bottom, white , rgb(228, 228, 228)); border:1px solid dimgray; padding:15px; margin-top:20px">
+        <pt style = "font-weight:bold;">Sort results by:</pt>
+        <select id="sortOrder" style = "width: 100%">
+        <option>Default order</option>
+        <option>Creation Date: Newest to Oldest</option>
+        <option>Creation Date: Oldest to Newest</option>
+        <option>Number of Attendees: Highest to Lowest</option>
+        <option>Number of Attendees: Lowest to Highest</option>
+        </select>
+    </div>
     
     <table align = "center" style = "width:80%; border: 2px solid dimgray; margin-top: 10px">
         <tr>
