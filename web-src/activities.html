@@ -112,7 +112,7 @@ input, select{
         </div>
     </div>
 
-    <div style = "background-image: linear-gradient(to bottom, white , rgb(228, 228, 228)); border:1px solid dimgray; padding:15px; margin-top:20px">
+    <div style = "background-image: linear-gradient(to bottom, white , rgb(228, 228, 228)); border:1px solid dimgray; border-bottom:none; padding:15px; margin-top:20px">
         <pt style = "font-weight:bold;">Sort results by:</pt>
         <select id="sortOrder" style = "width: 100%">
         <option>Default order</option>
@@ -123,63 +123,45 @@ input, select{
         </select>
     </div>
     
-    <table align = "center" style = "width:80%; border: 2px solid dimgray; margin-top: 10px">
-        <tr>
-          <th colspan = "3">EVENTNAME <span style = "background-color: powderblue; padding:5px; border-radius:7px">tag</span> <span style = "background-color: mediumseagreen; padding:5px; border-radius:7px">tagtag</span></th>
-        </tr>
-        <tr>
-            <td rowspan = "3" style = "width:25%">MAPWIDGET</td>
-          <td>TIME, DATE at LOCATION</td>
-        </tr>
-        <tr>
-          <td>NUMATTENDEES</td>
-        </tr>
-        <tr>
-          <td>HOSTEDBY</td>
-        </tr>
-        <tr>
-          <td colspan = "3">EVENTDESCRIPTION</td>
-        </tr>
-      </table>
+    <div id = "listContainer" style = "border: 1px solid dimgray; padding-bottom: 10px;">
+        <div style = "width: 90%; border: 1px solid dimgray; border-radius: 10px; box-shadow: 0 0 2px dimgray; margin:10 auto 0; padding: 10px;">
+            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span style = "background-color: powderblue; padding:5px; border-radius:7px">tag</span> <span style = "background-color: mediumseagreen; padding:5px; border-radius:7px">tagtag</span></pt>
+            <hr>
+            <div style = "border: 1px solid rgb(177, 177, 177); border-radius: 20px; height: 150px; width: 20%; padding:10px; margin-bottom: 10px; margin-right: 10px; float:left"><pt>MAPWIDGET</pt></div>
+            <pt>TIME, DATE at LOCATION</pt><br><br>
+            <pt>NUMATTENDEES attendees</pt><br><br>
+            <pt>Hosted by HOST</pt>
+            <div style = "border: 1px solid rgb(177, 177, 177); background-color:rgb(228, 228, 228); border-radius: 20px; padding: 10px; height:100px; clear: both; overflow:auto;">
+                <pt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec diam quis lacus dictum tincidunt. Quisque non purus id sapien tempor elementum. Praesent sit amet urna eget odio hendrerit eleifend. Cras id sollicitudin libero. Praesent venenatis nisi sed placerat pharetra. Duis viverra aliquam mi ac elementum. Ut tempus, est in consequat blandit, quam sapien lobortis elit, et consequat lacus nibh sed est. Fusce elementum luctus ante. Phasellus accumsan condimentum ex eget cursus. Nunc mollis blandit velit, nec interdum augue laoreet a. Nam tempor nec neque at eleifend. Mauris sapien odio, molestie vel justo non, convallis semper magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque vitae purus ante. Etiam ac nunc in ipsum volutpat pretium vel eu ipsum.</pt>
+            </div>
+        </div>
 
-      <table align = "center" style = "width:80%; border: 2px solid dimgray; margin-top: 10px">
-        <tr>
-          <th colspan = "3">EVENTNAME <span style = "background-color: dodgerblue; padding:5px; border-radius:7px">tag</span> <span style = "background-color: palevioletred; padding:5px; border-radius:7px">tagtag</span></th>
-        </tr>
-        <tr>
-            <td rowspan = "3" style = "width:25%">MAPWIDGET</td>
-          <td>TIME, DATE at LOCATION</td>
-        </tr>
-        <tr>
-          <td>NUMATTENDEES</td>
-        </tr>
-        <tr>
-          <td>HOSTEDBY</td>
-        </tr>
-        <tr>
-          <td colspan = "3">EVENTDESCRIPTION</td>
-        </tr>
-      </table>
+        <div style = "width: 90%; border: 1px solid dimgray; border-radius: 10px; box-shadow: 0 0 2px dimgray; margin:10 auto 0; padding: 10px;">
+            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span style = "background-color: dodgerblue; padding:5px; border-radius:7px">tag</span> <span style = "background-color: palevioletred; padding:5px; border-radius:7px">tagtag</span></pt>
+            <hr>
+            <div style = "border: 1px solid rgb(177, 177, 177); border-radius: 20px; height: 150px; width: 20%; padding:10px; margin-bottom: 10px; margin-right: 10px; float:left"><pt>MAPWIDGET</pt></div>
+            <pt>TIME, DATE at LOCATION</pt><br><br>
+            <pt>NUMATTENDEES attendees</pt><br><br>
+            <pt>Hosted by HOST</pt>
+            <div style = "border: 1px solid rgb(177, 177, 177); background-color:rgb(228, 228, 228); border-radius: 20px; padding: 10px; height:100px; clear: both">
+                <pt>EVENTDESCRIPTION</pt>
+            </div>
+        </div>
 
-      <table align = "center" style = "width:80%; border: 2px solid dimgray; margin-top: 10px">
-        <tr>
-          <th colspan = "3">EVENTNAME <span style = "background-color: burlywood; padding:5px; border-radius:7px">tag</span> <span style = "background-color: rosybrown; padding:5px; border-radius:7px">tagtag</span></th>
-        </tr>
-        <tr>
-            <td rowspan = "3" style = "width:25%">MAPWIDGET</td>
-          <td>TIME, DATE at LOCATION</td>
-        </tr>
-        <tr>
-          <td>NUMATTENDEES</td>
-        </tr>
-        <tr>
-          <td>HOSTEDBY</td>
-        </tr>
-        <tr>
-          <td colspan = "3">EVENTDESCRIPTION</td>
-        </tr>
-      </table>
-    
+        <div style = "width: 90%; border: 1px solid dimgray; border-radius: 10px; box-shadow: 0 0 2px dimgray; margin:10 auto 0; padding: 10px;">
+            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span style = "background-color: burlywood; padding:5px; border-radius:7px">tag</span> <span style = "background-color: rosybrown; padding:5px; border-radius:7px">tagtag</span></pt>
+            <hr>
+            <div style = "border: 1px solid rgb(177, 177, 177); border-radius: 20px; height: 150px; width: 20%; padding:10px; margin-bottom: 10px; margin-right: 10px; float:left"><pt>MAPWIDGET</pt></div>
+            <pt>TIME, DATE at LOCATION</pt><br><br>
+            <pt>NUMATTENDEES attendees</pt><br><br>
+            <pt>Hosted by HOST</pt>
+            <div style = "border: 1px solid rgb(177, 177, 177); background-color:rgb(228, 228, 228); border-radius: 20px; padding: 10px; height:100px; clear: both">
+                <pt>EVENTDESCRIPTION</pt>
+            </div>
+        </div>
+    </div>
+
+    <div style = "background-image: linear-gradient(to bottom, white , rgb(228, 228, 228)); border:1px solid dimgray; border-top:none; padding:15px"></div>
     </body>
     </div>
 
