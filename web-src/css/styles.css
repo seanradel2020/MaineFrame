@@ -13,7 +13,7 @@
 
 /* (B) ASSIGN THE AREAS */
 .cell {
-  padding: 100px;
+  padding: 50px;
 }
 .logo{
     grid-area: logo;
@@ -48,6 +48,7 @@ footertext a {
   padding: 14px 16px;
   text-decoration: none;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footertext a:hover {
@@ -68,6 +69,13 @@ ul {
 
 text{
   float: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* plain text */
+pt{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
 }
 
 text a{
@@ -80,6 +88,10 @@ text a{
 text a:hover{
   background-color:  #B0D7FF;;
     color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p, th, td, label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Set the size of the div element that contains the map */
