@@ -106,6 +106,10 @@
 
   /* Event list classes */
 
+  pt.clickable:hover{
+      text-decoration: underline;
+  }
+
   div.eventlist-container{
     background-image: linear-gradient(to bottom, white , rgb(228, 228, 228));
     border:1px solid dimgray;
@@ -118,6 +122,12 @@
     box-shadow: 0 0 2px dimgray; 
     margin:10 auto 0; 
     padding: 10px;
+  }
+
+  div.event-card:hover{
+      box-shadow: 0 0 10px dimgray;
+      transition-property: opacity;
+      transition: .25s;
   }
 
   div.mapwidget{
@@ -143,4 +153,12 @@
   span.tag{
     padding:5px; 
     border-radius:7px;
+  }
+
+  button{
+    border: 1px solid #001e3d;
+    background-image: linear-gradient(to bottom, #01468b, #00264d);
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
   }

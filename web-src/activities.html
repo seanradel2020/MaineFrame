@@ -80,7 +80,7 @@ input, select{
     <div class = "cell main">
     <h2>Event List</h2>
 
-    <div class = "eventlist-container" style = "padding:20px">
+    <div class = "eventlist-container" style = "padding: 5px 20px 20px 20px; overflow: hidden;">
         <h2>Filter Events</h2>
         <label style = "padding-bottom: 10px">
            Event Name<br>
@@ -109,6 +109,14 @@ input, select{
                 <input type="search" style = "width:33%" placeholder="(optional)">
                 <pt>attendees</pt>
             </div>
+        </div>
+        <div class = "row" style = "display: flex; justify-content: flex-end; align-items: flex-end;">
+          <div class = "column">
+              <button style = "float: left; margin-top: 10px">Search</button>
+          </div>
+          <div class = "column">
+              <pt class = "clickable" style = "float: right; font-size:smaller">Clear search parameters</pt>
+          </div>
         </div>
     </div>
 
