@@ -1,0 +1,146 @@
+
+/* (A) THE CONTAINER */
+#grid-layout {
+    display: grid;
+    grid-gap: 0px;
+    /* DESIGN YOUR GRID TEMPLATE */
+    grid-template-areas:
+    'logo logo logo name'
+    'header header header header'
+    'main main main side'
+    'footer footer footer footer';
+  }
+  
+  /* (B) ASSIGN THE AREAS */
+  .cell {
+    padding: 50px;
+  }
+  .logo{
+      grid-area: logo;
+   background: #B0D7FF;
+  }
+  .name{
+      grid-area: name;
+   background: #B0D7FF;
+  }
+  
+  .head {
+    grid-area: header;
+    background:  #003263;
+    background-image: linear-gradient(to bottom, #01468b, #00264d);
+  }
+  .main {
+    grid-area: main;
+    background: #FFFFFF;
+  }
+  .side {
+    grid-area: side;
+    background: #FFFFFF;
+  }
+  .foot {
+    grid-area: footer;
+    background: #003263;
+    background-image: linear-gradient(to top, #01468b, #00264d);
+  }
+  
+  
+  footertext a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  footertext a:hover {
+    background-color:  #B0D7FF;;
+      color: black;
+    text-align: center;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#B0D7FF;
+  
+  }
+  
+  text{
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* plain text */
+  pt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+  }
+  
+  text a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  text a:hover{
+    background-color:  #B0D7FF;;
+      color: black;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, th, td, label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Set the size of the div element that contains the map */
+  #map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+  /* Event list classes */
+
+  div.eventlist-container{
+    background-image: linear-gradient(to bottom, white , rgb(228, 228, 228));
+    border:1px solid dimgray;
+  }
+
+  div.event-card{
+    width: 90%; 
+    border: 1px solid dimgray; 
+    border-radius: 10px; 
+    box-shadow: 0 0 2px dimgray; 
+    margin:10 auto 0; 
+    padding: 10px;
+  }
+
+  div.mapwidget{
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 20px;
+    height: 150px;
+    width: 20%;
+    padding:10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float:left;
+  }
+
+  div.event-description{
+    border: 1px solid rgb(177, 177, 177);
+    background-color:rgb(228, 228, 228);
+    border-radius: 20px;
+    padding: 10px;
+    height: 100px;
+    clear: both;
+  }
+
+  span.tag{
+    padding:5px; 
+    border-radius:7px;
+  }

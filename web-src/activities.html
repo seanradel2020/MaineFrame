@@ -2,7 +2,7 @@
 <head>
   <title>Activities</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/activities_style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="media/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="media/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="media/icons/favicon-16x16.png">
@@ -80,7 +80,7 @@ input, select{
     <div class = "cell main">
     <h2>Event List</h2>
 
-    <div style = "background-image: linear-gradient(to bottom, white , rgb(228, 228, 228)); border:1px solid dimgray; padding:20px">
+    <div class = "eventlist-container" style = "padding:20px">
         <h2>Filter Events</h2>
         <label style = "padding-bottom: 10px">
            Event Name<br>
@@ -112,7 +112,7 @@ input, select{
         </div>
     </div>
 
-    <div style = "background-image: linear-gradient(to bottom, white , rgb(228, 228, 228)); border:1px solid dimgray; border-bottom:none; padding:15px; margin-top:20px">
+    <div class = "eventlist-container" style = "border-bottom:none; padding:15px; margin-top:20px">
         <pt style = "font-weight:bold;">Sort results by:</pt>
         <select id="sortOrder" style = "width: 100%">
         <option>Default order</option>
@@ -124,44 +124,44 @@ input, select{
     </div>
     
     <div id = "listContainer" style = "border: 1px solid dimgray; padding-bottom: 10px;">
-        <div style = "width: 90%; border: 1px solid dimgray; border-radius: 10px; box-shadow: 0 0 2px dimgray; margin:10 auto 0; padding: 10px;">
-            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span style = "background-color: powderblue; padding:5px; border-radius:7px">tag</span> <span style = "background-color: mediumseagreen; padding:5px; border-radius:7px">tagtag</span></pt>
+        <div class = "event-card">
+            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span class = "tag" style = "background-color: powderblue">tag</span> <span class = "tag" style = "background-color: mediumseagreen">tagtag</span></pt>
             <hr>
-            <div style = "border: 1px solid rgb(177, 177, 177); border-radius: 20px; height: 150px; width: 20%; padding:10px; margin-bottom: 10px; margin-right: 10px; float:left"><pt>MAPWIDGET</pt></div>
+            <div class = "mapwidget"><pt>MAPWIDGET</pt></div>
             <pt>TIME, DATE at LOCATION</pt><br><br>
             <pt>NUMATTENDEES attendees</pt><br><br>
             <pt>Hosted by HOST</pt>
-            <div style = "border: 1px solid rgb(177, 177, 177); background-color:rgb(228, 228, 228); border-radius: 20px; padding: 10px; height:100px; clear: both; overflow:auto;">
+            <div class = "event-description">
                 <pt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec diam quis lacus dictum tincidunt. Quisque non purus id sapien tempor elementum. Praesent sit amet urna eget odio hendrerit eleifend. Cras id sollicitudin libero. Praesent venenatis nisi sed placerat pharetra. Duis viverra aliquam mi ac elementum. Ut tempus, est in consequat blandit, quam sapien lobortis elit, et consequat lacus nibh sed est. Fusce elementum luctus ante. Phasellus accumsan condimentum ex eget cursus. Nunc mollis blandit velit, nec interdum augue laoreet a. Nam tempor nec neque at eleifend. Mauris sapien odio, molestie vel justo non, convallis semper magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque vitae purus ante. Etiam ac nunc in ipsum volutpat pretium vel eu ipsum.</pt>
             </div>
         </div>
 
-        <div style = "width: 90%; border: 1px solid dimgray; border-radius: 10px; box-shadow: 0 0 2px dimgray; margin:10 auto 0; padding: 10px;">
-            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span style = "background-color: dodgerblue; padding:5px; border-radius:7px">tag</span> <span style = "background-color: palevioletred; padding:5px; border-radius:7px">tagtag</span></pt>
+        <div class = "event-card">
+            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span class = "tag" style = "background-color: dodgerblue">tag</span> <span class = "tag" style = "background-color: palevioletred">tagtag</span></pt>
             <hr>
-            <div style = "border: 1px solid rgb(177, 177, 177); border-radius: 20px; height: 150px; width: 20%; padding:10px; margin-bottom: 10px; margin-right: 10px; float:left"><pt>MAPWIDGET</pt></div>
+            <div class = "mapwidget"><pt>MAPWIDGET</pt></div>
             <pt>TIME, DATE at LOCATION</pt><br><br>
             <pt>NUMATTENDEES attendees</pt><br><br>
             <pt>Hosted by HOST</pt>
-            <div style = "border: 1px solid rgb(177, 177, 177); background-color:rgb(228, 228, 228); border-radius: 20px; padding: 10px; height:100px; clear: both">
+            <div class = "event-description">
                 <pt>EVENTDESCRIPTION</pt>
             </div>
         </div>
 
-        <div style = "width: 90%; border: 1px solid dimgray; border-radius: 10px; box-shadow: 0 0 2px dimgray; margin:10 auto 0; padding: 10px;">
-            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span style = "background-color: burlywood; padding:5px; border-radius:7px">tag</span> <span style = "background-color: rosybrown; padding:5px; border-radius:7px">tagtag</span></pt>
+        <div class = "event-card">
+            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span class = "tag" style = "background-color: burlywood">tag</span> <span class = "tag" style = "background-color: rosybrown">tagtag</span></pt>
             <hr>
-            <div style = "border: 1px solid rgb(177, 177, 177); border-radius: 20px; height: 150px; width: 20%; padding:10px; margin-bottom: 10px; margin-right: 10px; float:left"><pt>MAPWIDGET</pt></div>
+            <div class = "mapwidget"><pt>MAPWIDGET</pt></div>
             <pt>TIME, DATE at LOCATION</pt><br><br>
             <pt>NUMATTENDEES attendees</pt><br><br>
             <pt>Hosted by HOST</pt>
-            <div style = "border: 1px solid rgb(177, 177, 177); background-color:rgb(228, 228, 228); border-radius: 20px; padding: 10px; height:100px; clear: both">
+            <div class = "event-description">
                 <pt>EVENTDESCRIPTION</pt>
             </div>
         </div>
     </div>
 
-    <div style = "background-image: linear-gradient(to bottom, white , rgb(228, 228, 228)); border:1px solid dimgray; border-top:none; padding:15px"></div>
+    <div class = "eventlist-container" style = "border-top:none; padding:15px"></div>
     </body>
     </div>
 
