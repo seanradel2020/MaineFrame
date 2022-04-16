@@ -125,6 +125,7 @@
   }
 
   div.event-card:hover{
+      cursor: pointer;
       box-shadow: 0 0 10px dimgray;
       transition-property: opacity;
       transition: .25s;
@@ -141,12 +142,23 @@
     float:left;
   }
 
+  div.mapwidget-large{
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 20px;
+    height: 300px;
+    width: 50%;
+    padding:10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float:left;
+  }
+
   div.event-description{
     border: 1px solid rgb(177, 177, 177);
     background-color:rgb(228, 228, 228);
     border-radius: 20px;
     padding: 10px;
-    height: 100px;
+    min-height: 100px;
     clear: both;
   }
 
@@ -161,4 +173,64 @@
     padding: 10px 20px;
     color: white;
     font-weight: bold;
+  }
+
+  /* Modal code based on https://www.w3schools.com/howto/howto_css_modals.asp */
+
+  .modal {
+    padding-top: 100px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-header {
+    background-image: linear-gradient(to bottom, #01468b, #00264d);
+    border:1px solid #001e3d;
+    color: white;
+    padding: 0px 20px;
+  }
+
+  .modal-body {
+    padding: 10px 16px;
+    border: 1px solid #001e3d;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .modal-footer {
+    background-image: linear-gradient(to bottom, #01468b, #00264d);
+    border:1px solid #001e3d;
+    padding: 20px;
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border: none;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .close {
+    color: rgb(219, 219, 219);
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
   }

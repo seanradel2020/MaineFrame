@@ -144,7 +144,7 @@ input, select{
             </div>
         </div>
 
-        <div class = "event-card">
+        <div class = "event-card" id = "event-2">
             <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span class = "tag" style = "background-color: dodgerblue">tag</span> <span class = "tag" style = "background-color: palevioletred">tagtag</span></pt>
             <hr>
             <div class = "mapwidget"><pt>MAPWIDGET</pt></div>
@@ -168,6 +168,42 @@ input, select{
             </div>
         </div>
     </div>
+
+    <!-- start modal -->
+
+    <div id = "event-modal" class = "modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Event Information</h2>
+        </div>
+        <div class="modal-body">
+          <div class = "mapwidget-large"><pt>MAPWIDGET</pt></div>
+          <pt style = "font-weight: bold; font-size: larger">EVENTNAME <span class = "tag" style = "background-color: dodgerblue">tag</span> <span class = "tag" style = "background-color: palevioletred">tagtag</span></pt>
+          <hr>
+          <pt>TIME, DATE at LOCATION</pt><br><br>
+          <pt>NUMATTENDEES attendees</pt><br><br>
+          <pt>Hosted by HOST</pt><br><br>
+          <div style = "display: flex; justify-content: space-between; flex-direction: column;">
+            <button>RSVP</button>
+          </div>
+          <div class = "event-description">
+            <pt><iframe width="420" height="315"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" allow = "autoplay">
+              </iframe></pt>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    
+    </div>
+
+    <script src="./js/activities.js"></script>
+
+    <!-- end modal -->
 
     <div class = "eventlist-container" style = "border-top:none; padding:15px"></div>
     </body>
