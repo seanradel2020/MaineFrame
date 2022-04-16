@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Your Profile</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/login_style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="media/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/icons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <div id="logo" class="main-div">    
+    <a href="index.html"><img src="media/umaineconnect.png" width="400" height="200"></a>
+  </div>
+  <div id="profile_div" class="main-div">
+    <h3>UMaine Connect Profile</h3>
+    <div id="profile-picture">
+      <img src="media/profilePictures/dev.png" width="640" height="80">
+    </div>
+    <div id="username_div" class="main-div">
+      
+    </div>
+    <input type="description" placeholder="Enter a Profile Description Here..." id="description_field" />
+    // gotta store in FireBase
+
+  </div>
+
+
+</a>
+        </div>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "",
+      authDomain: "umaine-connect.firebaseapp.com",
+      databaseURL: "umaine-connect",
+      projectId: "umaine-connect",
+      storageBucket: "umaine-connect.appspot.com",
+      messagingSenderId: "389765807009",
+      appId: "1:389765807009:web:ff0230588761594ce9a9e0",
+      measurementId: "G-VR1JG1CH5Y"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="./js/index.js"></script>
+
+</body>
+</html>

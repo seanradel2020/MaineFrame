@@ -6,6 +6,48 @@
 <link rel="manifest" href="/site.webmanifest">
 <script src="./js/map_google.js"></script>
 <script src="./js/index.js"></script>
+
+
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  input, select{
+      height:30px;
+      margin-top:10px;
+      margin-bottom:10px;
+  }
+  
+  /* Column code from https://www.w3schools.com/howto/howto_css_two_columns.asp */
+  
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
+
+
+
 <style>
 #grid-layout {
   display: grid;
@@ -34,11 +76,11 @@
     </ul>
   <div class="cell head">
 
-        <text><a class="active" href="./">Home</a></text>
-        <text><a href="about.php">Account</a></text>
+        <text><a class="Active" href="index.html">Home</a></text>
+        <text><a href="profile.html">Account</a></text>
         <text><a href="activities.html">Activities</a></text>
-        <text><a href="about.php">Friends</a></text>
-<text><a href="about.php">About</a></text>
+        <text><a href="friends.html">Friends</a></text>
+<text><a href="about.html">About</a></text>
   <text style="float:right"><a href="login.html">Login</a></text>
   <text style="float:right"><a href="contact.php">Contact</a></text>
   </ul>
@@ -56,7 +98,11 @@
   </div>
 
   <div class="cell side">
+<h1>Featured Activity</h1>
 
+
+
+<!--
     <h1>Activities</h1>
   <ul id="items">
       <li>Fogler Library, 11AM, lat: 44.899490, lng:  -68.669258</li>
@@ -79,9 +125,10 @@
             input.value = "";
           }
 </script>
+-->
   </div>
   <div class="cell foot">
-       <footertext><a class="active" href="terms.php">Terms and Conditions </a></footertex>  <footertext><a href="privacy.php">Privacy Policy</a></footertext>
+    <footertext><a class="active" href="terms.html">Terms and Conditions </a></footertex>  <footertext><a href="privacy.html">Privacy Policy</a></footertext>
 
   </div>
 </div>
