@@ -1,5 +1,6 @@
-<title>Privacy Policy</title>
+<title>About</title>
 <link rel="stylesheet" type="text/css" href="./css/styles.css">
+<link rel="stylesheet" type="text/css" href="./css/updates_style.css">
 <link rel="apple-touch-icon" sizes="180x180" href="media/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="media/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="media/icons/favicon-16x16.png">
@@ -44,7 +45,24 @@
   </ul>
   </div>
   <div class="cell main">
-
+    <form action="./php/newsletter.php" method="get">
+        <div class="container">
+          <h2>Subscribe to our Newsletter</h2>
+          <p>Don't want to miss an event? Get notified of what's going on.</p>
+        </div>
+      
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+          </label>
+        </div>
+      
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
  
   </div>
 
