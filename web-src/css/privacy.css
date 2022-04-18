@@ -1,0 +1,128 @@
+
+/* (A) THE CONTAINER */
+#grid-layout {
+    display: grid;
+    grid-gap: 0px;
+    /* DESIGN YOUR GRID TEMPLATE */
+    grid-template-areas:
+    'logo logo logo name'
+    'header header header header'
+    'main main main side'
+    'footer footer footer footer';
+  }
+  
+  /* (B) ASSIGN THE AREAS */
+  .cell {
+    padding: 50px;
+  }
+  .logo{
+      grid-area: logo;
+   background: #B0D7FF;
+  }
+  .name{
+      grid-area: name;
+   background: #B0D7FF;
+  }
+  
+  .head {
+    grid-area: header;
+    background:  #003263;
+    background-image: linear-gradient(to bottom, #01468b, #00264d);
+  }
+  .main {
+    grid-area: main;
+    background: #FFFFFF;
+    padding: 80px;
+  }
+  .side {
+    grid-area: side;
+    background: #FFFFFF;
+  }
+  .foot {
+    grid-area: footer;
+    background: #003263;
+    background-image: linear-gradient(to top, #01468b, #00264d);
+  }
+  
+  
+  footertext a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  footertextb a {
+    display: block;
+    color: white;
+    background: #003263;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  footertextb a:hover {
+    background-color:  #B0D7FF;;
+      color: black;
+    text-align: center;
+  }
+  
+  footertext a:hover {
+    background-color:  #B0D7FF;;
+      color: black;
+    text-align: center;
+  }
+  
+  
+  ul {
+    list-style-type: disc;
+    margin: 10px;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  text{
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Override auto-margins in certain browsers */
+  body{
+    margin: 0px;
+  }
+  
+  /* plain text */
+  pt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(67, 67, 67);
+    line-height: 130%;
+  }
+  
+  text a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  text a:hover{
+    background-color:  #B0D7FF;;
+      color: black;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, th, td, label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  h2{
+      margin-top: 40px;
+      font-size: 24px;
+      font-weight: 600;
+  }
+
+  strong{
+      font-weight: 600;
+  }
