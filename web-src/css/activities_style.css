@@ -73,6 +73,11 @@
     float: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
+  /* Override auto-margins in certain browsers */
+  body{
+    margin: 0px;
+  }
   
   /* plain text */
   pt{
