@@ -1,3 +1,4 @@
+
 <html>
 <head>
   <title>Newsletter Submission</title>
@@ -12,7 +13,7 @@
   <div id="logo" class="main-div">    
     <a href="index.html"><img src="media/umaineconnect.png" width="400" height="200"></a>
   </div>
-  
+
 Welcome <?php echo $_GET["name"]; ?><br>
 Your email address is: <?php echo $_GET["email"]; ?>
 Daily Updates? <?php echo $_GET["subscribe"]; ?>

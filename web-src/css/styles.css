@@ -52,6 +52,21 @@ footertext a {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+footertextb a {
+  display: block;
+  color: white;
+  background: #003263;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footertextb a:hover {
+  background-color:  #B0D7FF;;
+    color: black;
+  text-align: center;
+}
 
 footertext a:hover {
   background-color:  #B0D7FF;;
