@@ -9,6 +9,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <script src="./js/map_google.js"></script>
   <script src="./js/index.js"></script>
+  <script src="https://kit.fontawesome.com/dc76e38b0f.js" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -77,6 +78,7 @@ input, select{
                 <option selected disabled hidden>Select to add</option>
                 <option>Study Session</option>
                 <option>Party</option>
+                <option>Lunch</option>
                 <option>Soccer</option>
                 <option>Basketball</option>
                 <option>Club Meeting</option>
@@ -117,38 +119,41 @@ input, select{
     
     <div id = "listContainer" style = "border: 1px solid dimgray; padding-bottom: 10px;">
         <div class = "event-card">
-            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span class = "tag" style = "background-color: powderblue">tag</span> <span class = "tag" style = "background-color: mediumseagreen">tagtag</span></pt>
+            <pt style = "font-weight: bold; font-size: medium">Chili at the Union <span class = "tag" style = "background-color: palevioletred">Party</span> <span class = "tag" style = "background-color: orange">Lunch</span></pt>
             <hr>
-            <div class = "mapwidget"><pt>MAPWIDGET</pt></div>
-            <pt>TIME, DATE at LOCATION</pt><br><br>
-            <pt>NUMATTENDEES attendees</pt><br><br>
-            <pt>Hosted by HOST</pt>
+            <div class = "mapwidget"><pt></pt></div>
+            <pt><i class="fa-solid fa-clock"></i> <strong>12:00PM-1:30PM, Monday, May 2nd, 2021</strong></pt><br><br>
+            <pt><i class="fa-solid fa-location-dot"></i> <strong>Memorial Union</strong></pt><br><br>
+            <pt><i class="fa-solid fa-users"></i> <strong>35</strong> attendees</pt><br><br>
+            <pt><i class="fa-solid fa-user"></i> </i>Hosted by <strong>Bananas the Bear</strong></pt>
             <div class = "event-description">
-                <pt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec diam quis lacus dictum tincidunt. Quisque non purus id sapien tempor elementum. Praesent sit amet urna eget odio hendrerit eleifend. Cras id sollicitudin libero. Praesent venenatis nisi sed placerat pharetra. Duis viverra aliquam mi ac elementum. Ut tempus, est in consequat blandit, quam sapien lobortis elit, et consequat lacus nibh sed est. Fusce elementum luctus ante. Phasellus accumsan condimentum ex eget cursus. Nunc mollis blandit velit, nec interdum augue laoreet a. Nam tempor nec neque at eleifend. Mauris sapien odio, molestie vel justo non, convallis semper magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque vitae purus ante. Etiam ac nunc in ipsum volutpat pretium vel eu ipsum.</pt>
+                <pt>Come check out our chili potluck at the Union this Monday to get fired up for finals! We'll have five fantastic homemade chilis cooked up by our friends at the Bear's Den AND a chance for much, much more - this is a BYOB (bring your own beans) event! Bring a pot of your own best chili to be entered into our fan favorite contest and get a chance at winning an incredible $0.02 gift card to the University Bookstore!</pt>
             </div>
         </div>
 
         <div class = "event-card" id = "event-2">
-            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span class = "tag" style = "background-color: dodgerblue">tag</span> <span class = "tag" style = "background-color: palevioletred">tagtag</span></pt>
+            <pt style = "font-weight: bold; font-size: medium">COS420 Study Session <span class = "tag" style = "background-color: dodgerblue">Study Session</span></pt>
             <hr>
-            <div class = "mapwidget"><pt>MAPWIDGET</pt></div>
-            <pt>TIME, DATE at LOCATION</pt><br><br>
-            <pt>NUMATTENDEES attendees</pt><br><br>
-            <pt>Hosted by HOST</pt>
+            <div class = "mapwidget"><pt></pt></div>
+            <pt><i class="fa-solid fa-clock"></i> <strong>2:00PM-3:00PM, Thursday, April 25th, 2021</strong></pt><br><br>
+            <pt><i class="fa-solid fa-location-dot"></i> <strong>Fogler Library</strong></pt><br><br>
+            <pt><i class="fa-solid fa-users"></i> <strong>7</strong> attendees</pt><br><br>
+            <pt><i class="fa-solid fa-user"></i> </i>Hosted by <strong>Sam Student</strong></pt>
             <div class = "event-description">
-                <pt>EVENTDESCRIPTION</pt>
+                <pt>My group is going to be in the Reserve Reading Room going over how to make sequence diagrams. Come join us! We'll be by the front with a whiteboard.</pt>
             </div>
         </div>
 
         <div class = "event-card">
-            <pt style = "font-weight: bold; font-size: medium">EVENTNAME <span class = "tag" style = "background-color: burlywood">tag</span> <span class = "tag" style = "background-color: rosybrown">tagtag</span></pt>
+            <pt style = "font-weight: bold; font-size: medium">Campus Cares <span class = "tag" style = "background-color: mediumseagreen">Volunteering</span></pt>
             <hr>
-            <div class = "mapwidget"><pt>MAPWIDGET</pt></div>
-            <pt>TIME, DATE at LOCATION</pt><br><br>
-            <pt>NUMATTENDEES attendees</pt><br><br>
-            <pt>Hosted by HOST</pt>
+            <div class = "mapwidget"><pt></pt></div>
+            <pt><i class="fa-solid fa-clock"></i> <strong>9:00AM-12:00PM, Sunday, May 1st, 2021</strong></pt><br><br>
+            <pt><i class="fa-solid fa-location-dot"></i> <strong>University Mall</strong></pt><br><br>
+            <pt><i class="fa-solid fa-users"></i> <strong>13</strong> attendees</pt><br><br>
+            <pt><i class="fa-solid fa-user"></i> </i>Hosted by <strong>Jane Doe</strong></pt>
             <div class = "event-description">
-                <pt>EVENTDESCRIPTION</pt>
+                <pt>Want a way to enjoy the beautiful spring weather AND brighten someone's day while you're at it? Come join us this Sunday on the mall to make bouquets for local seniors! We'll have hundreds of gorgeous flowers from Maine's finest florists that you can choose from to craft your own charming bouquet. These will be delivered to seniors living alone and at nursing homes in the Orono area. Let's spread a little love and show everyone that our campus cares!</pt>
             </div>
         </div>
     </div>
@@ -164,19 +169,18 @@ input, select{
           <h2>Event Information</h2>
         </div>
         <div class="modal-body">
-          <div class = "mapwidget-large"><pt>MAPWIDGET</pt></div>
-          <pt style = "font-weight: bold; font-size: larger">EVENTNAME <span class = "tag" style = "background-color: dodgerblue">tag</span> <span class = "tag" style = "background-color: palevioletred">tagtag</span></pt>
+          <div class = "mapwidget-large"><pt></pt></div>
+          <pt style = "font-weight: bold; font-size: larger">COS420 Study Session <span class = "tag" style = "background-color: dodgerblue">Study Session</span></pt>
           <hr>
-          <pt>TIME, DATE at LOCATION</pt><br><br>
-          <pt>NUMATTENDEES attendees</pt><br><br>
-          <pt>Hosted by HOST</pt><br><br>
+          <pt><i class="fa-solid fa-clock"></i> <strong>2:00PM-3:00PM, Thursday, April 25th, 2021</strong></pt><br><br>
+          <pt><i class="fa-solid fa-location-dot"></i> <strong>Fogler Library</strong></pt><br><br>
+          <pt><i class="fa-solid fa-users"></i> <strong>7</strong> attendees</pt><br><br>
+          <pt><i class="fa-solid fa-user"></i> </i>Hosted by <strong>Sam Student</strong></pt>
           <div style = "display: flex; justify-content: space-between; flex-direction: column;">
             <button>RSVP</button>
           </div>
           <div class = "event-description">
-            <pt><iframe width="420" height="315"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" allow = "autoplay">
-              </iframe></pt>
+            <pt>My group is going to be in the Reserve Reading Room going over how to make sequence diagrams. Come join us! We'll be by the front with a whiteboard.</pt>
           </div>
         </div>
         <div class="modal-footer">
