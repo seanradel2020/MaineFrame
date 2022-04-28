@@ -12,25 +12,41 @@ function initMap() {
     const mall = {lat: 44.901380, lng:  -68.669706};
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 15,
+      mapTypeID: 'satellite',
       center: fogler,
     });
 
     const marker = new google.maps.Marker({
       position: fogler,
       map: map,
-      label: label1,
+      label: {
+        text: label1,
+        color: 'black',
+        fontSize: "20px",
+        fontWeight: "bold"
+      }
     });
 
     const marker3 = new google.maps.Marker({
       position: union,
       map: map,
-      label: label3,
+      label: {
+        text: label3,
+        color: 'black',
+        fontSize: "20px",
+        fontWeight: "bold"
+      }
     });
 
 
     const marker2 = new google.maps.Marker({
       position: mall,
       map: map,
-      label: label2
+      label: {
+        text: label2,
+        color: 'black',
+        fontSize: "20px",
+        fontWeight: "bold"
+      }
     });
   }
