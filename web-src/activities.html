@@ -69,7 +69,7 @@ input, select{
         <h2>Filter Events</h2>
         <label style = "padding-bottom: 10px">
            Event Name<br>
-           <input type="search" style = "width:100%">
+           <input type="search" style = "width:100%" id = "eventName">
         </label>
         <div class = "row">
             <div class = "column">
@@ -92,7 +92,7 @@ input, select{
                 <option>Fewer than:</option>
                 <option>More than:</option>
                 </select>
-                <input type="search" style = "width:33%" placeholder="(optional)">
+                <input type="search" style = "width:33%" placeholder="(optional)" id = "numAttendees">
                 <pt>attendees</pt>
             </div>
         </div>
@@ -101,7 +101,7 @@ input, select{
               <button style = "float: left; margin-top: 10px">Search</button>
           </div>
           <div class = "column">
-              <pt class = "clickable" style = "float: right; font-size:smaller">Clear search parameters</pt>
+              <pt class = "clickable" style = "float: right; font-size:smaller" onclick = "clearValues()">Clear search parameters</pt>
           </div>
         </div>
     </div>
@@ -190,6 +190,16 @@ input, select{
     </div>
 
     <script src="./js/activities.js"></script>
+    
+    <!-- can't get to work in js file, placing in main html file temporarily -->
+    <script>
+      function clearValues(){
+        document.getElementById("numAttendees").value = "";
+        document.getElementById("eventName").value = "";
+        document.getElementById("tagSelect").selectedIndex = "0";
+        document.getElementById("attendeeFilter").selectedIndex = "0";
+      }
+    </script>
 
     <!-- end modal -->
 
