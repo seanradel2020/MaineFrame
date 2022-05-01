@@ -1,0 +1,30 @@
+.box{
+    background-image: url(../connect.png);
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+    margin: 200px;
+}
+
+.container{
+  display: block;
+  width: 320px
+  min-height 400px
+  border-radius 3px
+  margin 0 auto
+  padding 30px
+}
+
+.button{
+  position: relative
+  display inline-block
+  font-size 14px
+  font-weight 600
+  text-decoration none
+  outline 0
+  cursor pointer
+  height 50px
+  line-height 50px
+  margin 0
+  padding 0 20px
+}
